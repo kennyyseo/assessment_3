@@ -6,5 +6,5 @@ from django.views.generic.edit import CreateView
 
 
 def index(request):
-    widgets = Widget.objects.all()
-    return render(request, 'index.html', {'widgets': widgets})
+    widget_list = Widget.objects.all()
+    return render(request, 'index.html', {'widgets': widget_list})
