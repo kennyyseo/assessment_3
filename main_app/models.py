@@ -5,8 +5,8 @@ from django.urls import reverse
 
 
 class Widget(models.Model):
-    Description = models.CharField(max_length=50)
-    Quantity = models.IntegerField()
+    description = models.CharField(max_length=50)
+    quantity = models.IntegerField()
 
     def __str__(self):
         return self.description
